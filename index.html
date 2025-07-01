@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio do Norton</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-light">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Norton.dev</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="text-center py-5 bg-gradient bg-dark">
+     <h1 class="display-4 fw-bold">
+        <span>Olá, eu sou </span><span id="typewriter" class="text-info"></span><span class="cursor">|</span>
+    </h1>
+    <p class="lead">Criador de mundos, jogos, videos e histórias que te fazem pensar (e rir)</p>
+    <a href="#projetos" class="btn btn-outline-light mt-3">Ver Projetos</a>
+  </header>
+
+  <!-- Sobre -->
+  <section id="sobre" class="container py-5">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Quem sou eu?</h2>
+        <p>Sou um aspirante a desenvolvedor de jogos, criador e editor de videos, musico
+           e escritor de fantasia urbana com um toque de sarcasmo e misterio. 
+           Escrevo histórias, toco violão, desenho, edito, e programo quando não tô procrastinando, e sonho com mundos que ainda não existem.</p>
+      </div>
+      <div class="col-md-6 text-center">
+        <img src="assets/Swag Cartoon pfp.jpg" alt="foto norton" class="img-fluid rounded-circle shadow">
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="bg-secondary py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Meus Projetos</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card bg-dark text-light h-100">
+            <div class="card-body">
+              <h5 class="card-title">Jogo: Black Brew Chronicles</h5>
+              <p class="card-text">Tudo que posso dizer sobre esse jogo, é que sera um Hack n' Slash, focado na historia do livro. Com tempo vos atualizo</p>
+              <button class="btn btn-outline-light" onclick="alert('Ainda em segredo, shhh 😎')">Ver Mais</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-dark text-light h-100">
+            <div class="card-body">
+              <h5 class="card-title">Livro: Black Brew</h5>
+              <p class="card-text">Uma história densa, com vigilantes, conspirações e ação estilo anime. Ainda em desenvolvimento.</p>
+              <a href="https://blackbrew.netlify.app/"><button class="btn btn-outline-light">Ver o site</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-dark text-light h-100">
+            <div class="card-body">
+              <h5 class="card-title">Site: Bar d' Netinyo</h5>
+              <p class="card-text">No meu tempo livre eu criei esta pagina simples para um bar de um parente.</p>
+              <button class="btn btn-outline-light" onclick="alert('Acho que Norton esqueceu de adiconar o link aqui')">Ver site</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card bg-dark text-light h-100">
+            <div class="card-body">
+              <h5 class="card-title">Site: Shelsy Store</h5>
+              <p class="card-text">Mais um site criado por mim, no meu pequeno tempo de liberdade, mas dessa vez um site de vendas simples.</p>
+              <button class="btn btn-outline-light" onclick="alert('Acho que Norton esqueceu de adiconar o link aqui')">Ver site</button>
+            </div>
+          </div>
+        </div>
+        <!-- Adicione + projetos assim -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="container py-5">
+    <h2 class="text-center mb-4">Vamos conversar</h2>
+        <form id="whatsapp-form">
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" required>
+        </div>
+        <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem</label>
+            <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Enviar pelo WhatsApp</button>
+        </form>
+  </section>
+
+<!--redes sociais-->
+  <section id="redes-sociais" class="bg-dark text-light py-4">
+  <div class="container text-center">
+    <h2 class="mb-4">Outras redes</h2---->
+    <div class="d-flex justify-content-center gap-4">
+      <a href="https://web.facebook.com/norton.rungo" target="_blank" class="text-light fs-4">
+        <i class="bi bi-facebook"></i>
+      </a>
+      <a href="https://x.com/NortonRungo" target="_blank" class="text-light fs-4">
+        <i class="bi bi-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/___norton____/" target="_blank" class="text-light fs-4">
+        <i class="bi bi-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com/@Norton258" target="_blank" class="text-light fs-4">
+        <i class="bi bi-youtube"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-center text-light py-3 mt-5">
+    <p>Feito com 💻 e ☕ por Norton - 2025</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById('nome').value.trim();
+    const msg = document.getElementById('mensagem').value.trim();
+
+    if (!nome || !msg) {
+      alert('Preencha todos os campos!');
+      return;
+    }
+
+    // Teu número com DDI de Moçambique (+258)
+    const numero = '258868741942';
+
+    const texto = `Olá Norton! Me chamo ${nome} e quero dizer: ${msg}`;
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
+
+    // Abre o WhatsApp (no navegador ou app)
+    window.open(url, '_blank');
+  });
+</script>
+
+<script>
+  const nomes = ["Norton", "Ronin", "Eu", "O Louco com Insonia", "O Genio Sonhador"];
+  let indexAtual = 0;
+  let charIndex = 0;
+  let apagando = false;
+  const velocidade = 40;
+  const pausa = 2000;
+  const elemento = document.getElementById("typewriter");
+
+  function digitar() {
+    const nome = nomes[indexAtual];
+
+    if (!apagando) {
+      elemento.textContent = nome.substring(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === nome.length) {
+        apagando = true;
+        setTimeout(digitar, pausa);
+        return;
+      }
+    } else {
+      elemento.textContent = nome.substring(0, charIndex - 1);
+      charIndex--;
+
+      if (charIndex === 0) {
+        apagando = false;
+        indexAtual = (indexAtual + 1) % nomes.length;
+      }
+    }
+
+    setTimeout(digitar, velocidade);
+  }
+
+  digitar();
+</script>
+
+
+</body>
+</html>

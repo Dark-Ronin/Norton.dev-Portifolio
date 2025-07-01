@@ -1,0 +1,27 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+section h2 {
+  font-weight: 700;
+  border-left: 5px solid #0dcaf0;
+  padding-left: 10px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px #0dcaf0aa;
+}
+
+.cursor {
+  display: inline-block;
+  animation: blink 0.8s infinite;
+  color: #0dcaf0;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
