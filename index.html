@@ -445,5 +445,31 @@
     });
   });
   </script>
+
+  <script>
+  document.getElementById('whatsapp-form').addEventListener('submit', function (e) {
+    e.preventDefault(); // Impede envio tradicional do formulário
+
+    const nome = document.getElementById('nome').value.trim();
+    const mensagem = document.getElementById('mensagem').value.trim();
+    
+    if (!nome || !mensagem) {
+      alert("Por favor, preencha todos os campos.");
+      return;
+    }
+
+    // Número de destino (inclua o DDI e DDD, exemplo: +55 para Brasil)
+    const numero = '258834140597'; // adicione o DDI se necessário (ex: 55834140597 para Brasil)
+
+    // Monta a mensagem
+    const texto = `Olá, meu nome é ${nome}. %0A${mensagem}`;
+    
+    // Abre o WhatsApp com a mensagem preenchida
+    const url = `https://wa.me/258834140597?text=${encodeURIComponent(texto)}`;
+    
+    window.open(url, '_blank'); // Abre em nova aba
+  });
+</script>
+
 </body>
 </html>
