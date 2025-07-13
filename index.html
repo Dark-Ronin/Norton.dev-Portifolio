@@ -3,23 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfólio do Norton</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <title>Norton.exe</title>
+  <!-- quando eu trablhar offline <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet"> -->
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- GLightbox -->
+<link href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css" rel="stylesheet">
+
+<!-- Swiper -->
+<link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark text-light">
+<body class="text-light">
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black border-bottom border-light">
+  <nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Norton.dev</a>
+      <a class="navbar-brand fw-bold" href="#">Norton.exe</a>
       <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
           <li class="nav-item"><a class="nav-link" href="#projetos">Projetos</a></li>
           <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
@@ -28,36 +44,251 @@
   </nav>
 
   <!-- Hero -->
-  <header class="text-center py-5 bg-gradient bg-dark">
-     <h1 class="display-4 fw-bold">
-        <span>Olá, eu sou </span><span id="typewriter" class="text-info"></span><span class="cursor">|</span>
-    </h1>
-    <p class="lead">Criador de mundos, jogos, videos e histórias que te fazem pensar (e rir)</p>
-    <a href="#projetos" class="btn btn-outline-light mt-3">Ver Projetos</a>
-  </header>
+<section id="hero" class="hero section">
 
-  <!-- Sobre -->
-  <section id="sobre" class="container py-5">
-    <div class="row align-items-center">
-      <div class="col-md-6">
-        <h2>Quem sou eu?</h2>
-        <p>Sou um aspirante a desenvolvedor de jogos, criador e editor de videos, musico
-           e escritor de fantasia urbana com um toque de sarcasmo e misterio. 
-           Escrevo histórias, toco violão, desenho, edito, e programo quando não tô procrastinando, e sonho com mundos que ainda não existem.</p>
+      <div class="background-elements">
+        <div class="bg-circle circle-1"></div>
+        <div class="bg-circle circle-2"></div>
       </div>
-      <div class="col-md-6 text-center">
-        <img src="assets/Swag Cartoon pfp.jpg" alt="foto norton" class="img-fluid rounded-circle shadow">
+
+      <div class="hero-content">
+
+        <div class="container">
+          <div class="row align-items-center">
+
+            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+              <div class="hero-text">
+                <h1>Ronin.<span class="accent-text">Studio</span></h1>
+                <h3 style="font-size: 40px;">Norton Rungo</h3>
+                <p class="lead">Eu sou <span class="typed" data-typed-items="Escritor, WebDesigner, GameDev, Illustrador, Editor de Video"></span></p>
+                <p class="description">Eu nunca soube escolher só uma coisa para fazer. Atualmente eu sou dev, escritor, edito videos, animo mmv's, faço ads com motion graphic, faço flyers, desenho. E tudo isso ao mesmo tempo.</p>
+                <p class="description" style="font-weight: bolder; font-size: 20px;">Só sou viciado em aprender</p>
+                <div class="hero-actions">
+                  <a href="#projetos" class="btn btn-primary">Veja meus trabalhos</a>
+                  <a href="#contato" class="btn btn-outline">Entre em contato</a>
+                </div>
+
+                <div class="d-flex social-links gap-4">
+                  <a href="https://web.facebook.com/norton.rungo" target="_blank" class="text-light fs-4">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="https://x.com/NortonRungo" target="_blank" class="text-light fs-4">
+                    <i class="bi bi-twitter"></i>
+                  </a>
+                  <a href="https://www.instagram.com/___norton____/" target="_blank" class="text-light fs-4">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="https://www.youtube.com/@Norton258" target="_blank" class="text-light fs-4">
+                    <i class="bi bi-youtube"></i>
+                  </a>
+                  <a href="https://wa.me/258834140597?text=Oi,%20Tudo%bem?" target="_blank" class="text-light fs-4">
+                    <i class="bi bi-whatsapp"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+              <div class="hero-visual">
+                <div class="profile-container">
+                  <div class="profile-background"></div>
+                  <img src="assets/Swag Cartoon pfp.jpg" alt="Norton Rungo" class="profile-image">
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
+
+    </section>
+
+ <!-- Skills Section -->
+    <section id="skills" class="skills section">
+      <br>
+      <br>
+      <br>
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Habilidades</h2>
+        <p style="text-align: center;">Algumas coisinhas que eu sei fazer</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
+              <h3>Habilidades Tecnicas</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>HTML/CSS</h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Expert level knowledge of semantic HTML5 and modern CSS3 techniques</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>JavaScript</h4>
+                    <span class="skill-percentage">45%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Strong proficiency in ES6+, DOM manipulation, and modern frameworks</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Python</h4>
+                    <span class="skill-percentage">30%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experience with React hooks, state management, and component architecture</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Adobe Premiere</h4>
+                    <span class="skill-percentage">85%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experience with React hooks, state management, and component architecture</div>
+                </div>
+               
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Adobe After Effects</h4>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experience with React hooks, state management, and component architecture</div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Adobe Photoshop</h4>
+                    <span class="skill-percentage">95%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experience with React hooks, state management, and component architecture</div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>FL Studio</h4>
+                    <span class="skill-percentage">65%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experience with React hooks, state management, and component architecture</div>
+                </div>
+              </div>
+            </div><!-- End Frontend Skills -->
+          </div>
+
+          <div class="col-lg-6">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="300">
+              <h3>Miscelanêa</h3>
+              <div class="skills-animation">
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Português</h4>
+                    <span class="skill-percentage">98%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Server-side JavaScript development with Express and REST APIs</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Inglês</h4>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Python development with Django and data analysis tools</div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Storytelling</h4>
+                    <span class="skill-percentage">75%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Database design, optimization, and complex queries</div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Roteirização de videos</h4>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experience with React hooks, state management, and component architecture</div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Aprendizado rapido</h4>
+                    <span class="skill-percentage">90%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experience with React hooks, state management, and component architecture</div>
+                </div>
+                
+                <div class="skill-item">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h4>Autodidata</h4>
+                    <span class="skill-percentage">80%</span>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="skill-tooltip">Experience with React hooks, state management, and component architecture</div>
+                </div>
+              </div>
+            </div><!-- End Backend Skills -->
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <br>
+      <br>
+    </section><!-- /Skills Section -->
 
   <!-- Projetos -->
-  <section id="projetos" class="bg-secondary py-5">
+  <section id="projetos" class="py-5">
     <div class="container">
       <h2 class="text-center mb-4">Meus Projetos</h2>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card bg-dark text-light h-100">
+          <div class="card text-light h-100">
             <div class="card-body">
               <h5 class="card-title">Jogo: Black Brew Chronicles</h5>
               <p class="card-text">Tudo que posso dizer sobre esse jogo, é que sera um Hack n' Slash, focado na historia do livro. Com tempo vos atualizo</p>
@@ -67,7 +298,7 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card bg-dark text-light h-100">
+          <div class="card text-light h-100">
             <div class="card-body">
               <h5 class="card-title">Livro: Black Brew</h5>
               <p class="card-text">Uma história densa, com vigilantes, conspirações e ação estilo anime. Ainda em desenvolvimento.</p>
@@ -77,20 +308,30 @@
         </div>
 
         <div class="col-md-4">
-          <div class="card bg-dark text-light h-100">
+          <div class="card text-light h-100">
             <div class="card-body">
               <h5 class="card-title">Site: Bar d' Netinyo</h5>
               <p class="card-text">No meu tempo livre eu criei esta pagina simples para um bar de um parente.</p>
-              <button class="btn btn-outline-light" onclick="alert('Acho que Norton esqueceu de adiconar o link aqui')">Ver site</button>
+              <a href="https://dark-ronin.github.io/Bar-D-Netinyo/"><button class="btn btn-outline-light">Ver site</button></a>
             </div>
           </div>
         </div>
 
         <div class="col-md-4">
-          <div class="card bg-dark text-light h-100">
+          <div class="card text-light h-100">
             <div class="card-body">
               <h5 class="card-title">Site: Shelsy Store</h5>
               <p class="card-text">Mais um site criado por mim, no meu pequeno tempo de liberdade, mas dessa vez um site de vendas simples.</p>
+              <a href="https://dark-ronin.github.io/Shelsy-store/"><button class="btn btn-outline-light">Ver site</button></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card text-light h-100">
+            <div class="card-body">
+              <h5 class="card-title">Site: KombaAngecy</h5>
+              <p class="card-text">Mais um site criado por mim, no meu pequeno tempo de liberdade.</p>
               <button class="btn btn-outline-light" onclick="alert('Acho que Norton esqueceu de adiconar o link aqui')">Ver site</button>
             </div>
           </div>
@@ -102,24 +343,27 @@
 
   <!-- Contato -->
   <section id="contato" class="container py-5">
-    <h2 class="text-center mb-4">Vamos conversar</h2>
-        <form id="whatsapp-form">
+    <h2 class="text-center mb-4">Contacto</h2>
+        <form id="whatsapp-form" class="contact-box">
+        <h3 class="text-center mb-4">Mande uma Mensagem!</h2>
         <div class="mb-3">
             <label for="nome" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="nome" required>
+            <input type="text" class="form-control" id="nome" required placeholder="Joseph Joestar">
         </div>
         <div class="mb-3">
             <label for="mensagem" class="form-label">Mensagem</label>
-            <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+            <textarea class="form-control" id="mensagem" rows="4" required placeholder="Sua proxima fala sera:"></textarea>
         </div>
         <button type="submit" class="btn btn-success">Enviar pelo WhatsApp</button>
         </form>
-  </section>
 
-<!--redes sociais-->
-  <section id="redes-sociais" class="bg-dark text-light py-4">
-  <div class="container text-center">
-    <h2 class="mb-4">Outras redes</h2---->
+    </section>
+
+
+  <!-- Footer -->
+  <footer class="bg-black text-center text-light py-3 mt-5">
+      <div class="container text-center">
+    <h2 class="mb-4">Meus Perfis</h2>
     <div class="d-flex justify-content-center gap-4">
       <a href="https://web.facebook.com/norton.rungo" target="_blank" class="text-light fs-4">
         <i class="bi bi-facebook"></i>
@@ -135,75 +379,54 @@
       </a>
     </div>
   </div>
-</section>
-
-  <!-- Footer -->
-  <footer class="bg-black text-center text-light py-3 mt-5">
     <p>Feito com 💻 e ☕ por Norton - 2025</p>
   </footer>
 
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.getElementById('whatsapp-form').addEventListener('submit', function(e) {
-    e.preventDefault();
+  <script src="js/bootstrap.bundle.min.js"></script>
 
-    const nome = document.getElementById('nome').value.trim();
-    const msg = document.getElementById('mensagem').value.trim();
+    <script src="assets/js/main.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-    if (!nome || !msg) {
-      alert('Preencha todos os campos!');
-      return;
+  <script>
+      /*** Inicializar a type animation */
+    const selectTyped = document.querySelector('.typed');
+    if (selectTyped) {
+      let typed_strings = selectTyped.getAttribute('data-typed-items');
+      typed_strings = typed_strings.split(',');
+      new Typed('.typed', {
+        strings: typed_strings,
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 50,
+        backDelay: 2000
+      });
     }
 
-    // Teu número com DDI de Moçambique (+258)
-    const numero = '258834140597';
-
-    const texto = `Olá Norton! Me chamo ${nome} e quero dizer: ${msg}`;
-    const url = `https://wa.me/${numero}?text=${encodeURIComponent(texto)}`;
-
-    // Abre o WhatsApp (no navegador ou app)
-    window.open(url, '_blank');
+    /**
+   * Animate the skills items on reveal
+   */
+  let skillsAnimation = document.querySelectorAll('.skills-animation');
+  skillsAnimation.forEach((item) => {
+    new Waypoint({
+      element: item,
+      offset: '80%',
+      handler: function(direction) {
+        let progress = item.querySelectorAll('.progress .progress-bar');
+        progress.forEach(el => {
+          el.style.width = el.getAttribute('aria-valuenow') + '%';
+        });
+      }
+    });
   });
-</script>
-
-<script>
-  const nomes = ["Norton", "Ronin", "Eu", "O Louco com Insonia", "O Genio Sonhador"];
-  let indexAtual = 0;
-  let charIndex = 0;
-  let apagando = false;
-  const velocidade = 40;
-  const pausa = 2000;
-  const elemento = document.getElementById("typewriter");
-
-  function digitar() {
-    const nome = nomes[indexAtual];
-
-    if (!apagando) {
-      elemento.textContent = nome.substring(0, charIndex + 1);
-      charIndex++;
-
-      if (charIndex === nome.length) {
-        apagando = true;
-        setTimeout(digitar, pausa);
-        return;
-      }
-    } else {
-      elemento.textContent = nome.substring(0, charIndex - 1);
-      charIndex--;
-
-      if (charIndex === 0) {
-        apagando = false;
-        indexAtual = (indexAtual + 1) % nomes.length;
-      }
-    }
-
-    setTimeout(digitar, velocidade);
-  }
-
-  digitar();
-</script>
-
-
+  </script>
 </body>
 </html>
