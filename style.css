@@ -31,7 +31,7 @@ section h2 {
 
 .card {
   background-color: #1f1f1f;
-  border: none;
+  border: solid #795f99;
 }
 
 .card:hover {
@@ -39,6 +39,61 @@ section h2 {
   transition: transform 0.3s ease;
   box-shadow: 0 0 15px #aa60ff;
 }
+
+.bb, .bar, .shelsy, .komba,.eps {
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bb::before,
+.bar::before,
+.shelsy::before,
+.komba::before, 
+.eps::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px) brightness(0.6);
+  z-index: 0;
+  transition: 0.3s;
+}
+
+.bb:hover::before,
+.bar:hover::before,
+.shelsy:hover::before,
+.komba:hover::before,
+.eps:hover::before{
+  filter: blur(2px) brightness(0.8);
+}
+
+.bb .card-body,
+.bar .card-body,
+.shelsy .card-body,
+.komba .card-body,
+.eps .card-body{
+  position: relative;
+  z-index: 1;
+}
+
+.bb::before {
+  background-image: url('assets/blackbrew.PNG');
+}
+.bar::before {
+  background-image: url('assets/bar.PNG');
+}
+.shelsy::before {
+  background-image: url('assets/shelsy.PNG');
+}
+.komba::before {
+  background-image: url('assets/komba.PNG');
+}
+.eps::before {
+  background-image: url('assets/eps.PNG');
+}
+
 
 .cursor {
   display: inline-block;
